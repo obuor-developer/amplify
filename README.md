@@ -10,6 +10,7 @@ Creating Frontend
 
 Use the index.html file from the project files. Or simply open a text editor and copy the following code into an index.html file. Note the part with “YOUR API URL” as we will be filling this part with the API URL later.
 
+``
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,6 +89,7 @@ Use the index.html file from the project files. Or simply open a text editor and
     </form>
 </body>
 </html>`
+``
 
 The file should look like this when opened on a browser. It gives spaces to input the length and width of a rectangle and a ‘Calculate’ button
 Image description
@@ -219,7 +221,7 @@ Image description
 The Invoke URL is what you replace “YOUR API URL” with on the index.html file. Insert the URL, regenerate the index.html file and reupload to Amplify
 Image description
 
-Invoke URL: https://j2hiyb31be.execute-api.us-east-1.amazonaws.com/mycloud
+``Invoke URL: https://j2hiyb31be.execute-api.us-east-1.amazonaws.com/mycloud ``
 
 Setting up a Database on DynamoDB to store results
 
@@ -235,7 +237,7 @@ Image description
 Select the table name. Under the settings tab, expand ‘General information’, then take note of the ARN
 Image description
 
-arn:aws:dynamodb:us-east-1:266735826605:table/web-table
+``arn:aws:dynamodb:us-east-1:266735826605:table/web-table``
 
 Let’s add permissions to our Lambda function to access DynamoDB. On the Lambda function window, select the ‘Configuration’ tab, then ‘Permissions’ on the left side panel, and select the Role name.
 Image description
@@ -246,7 +248,7 @@ Image description
 Select the JSON Tab and copy the following policy. Replace “YOUR-TABLE-ARN” with the ARN of your table that we copied in step 4, then click ‘Next’ at the bottom
 Image description
 
-
+``
 {
 "Version": "2012-10-17",
 "Statement": [
@@ -265,6 +267,7 @@ Image description
 }
 ]
 }
+``
 
 On the ‘Review and create’ page, give the policy a name then click on ‘Create policy’ at the bottom of the page
 Image description
