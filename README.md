@@ -9,6 +9,7 @@ Access to the project files: Amplify Web App
 Creating Frontend
 
 Use the index.html file from the project files. Or simply open a text editor and copy the following code into an index.html file. Note the part with “YOUR API URL” as we will be filling this part with the API URL later.
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -87,6 +88,7 @@ Use the index.html file from the project files. Or simply open a text editor and
     </form>
 </body>
 </html>`
+
 The file should look like this when opened on a browser. It gives spaces to input the length and width of a rectangle and a ‘Calculate’ button
 Image description
 
@@ -105,6 +107,7 @@ We have to make sure the Amplify GitHub App has permission to the repository and
 Image description
 
 Name your App and edit YML file. Copy this code and paste it into the YML file. Click on 'Next'
+
 version: 1
 frontend:
 phases:
@@ -145,6 +148,8 @@ Image description
 Image description
 
 Copy the following Lambda function onto your lambda_function.py file. Please note the DynamoDB name. We will be use this name later as we create the DB.
+
+``
 # import the JSON utility package
 import json
 
@@ -181,6 +186,7 @@ def lambda_handler(event, context):
     'statusCode': 200,
     'body': json.dumps('Your result is ' + str(Area))
     }
+    ``
 Select 'code' and paste your lambda_function.py code. Click on 'Deploy'
 Image description
 
