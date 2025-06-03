@@ -4,7 +4,7 @@ Image description
 
 Get ready to dive into the world of serverless web application development on AWS. In this series, we’ll guide you through the process of creating a dynamic web app that calculates the area of a rectangle based on user-provided length and width values. We’ll leverage the power of AWS Amplify for web hosting, AWS Lambda functions for real-time calculations, DynamoDB for storing and retrieving results, and API Gateway for seamless communication. By the end of this journey, you’ll have the skills to build a responsive and scalable solution that showcases the true potential of serverless architecture. Let’s embark on this development adventure together!
 
-Access to the project files: Amplify Web App
+Click on the url link for a step-by-step guide approach: https://dev.to/isaac_obuor_4ec2278316110/serverless-web-app-development-made-easy-a-complete-guide-with-aws-amplify-dynamodb-lambda-and-353o 
 
 Creating Frontend
 
