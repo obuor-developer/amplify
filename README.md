@@ -10,7 +10,7 @@ Creating Frontend
 
 Use the index.html file from the project files. Or simply open a text editor and copy the following code into an index.html file. Note the part with “YOUR API URL” as we will be filling this part with the API URL later.
 
-``
+<
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,8 +88,8 @@ Use the index.html file from the project files. Or simply open a text editor and
         <button type="button" onclick="callAPI(document.getElementById('length').value,document.getElementById('width').value)">CALCULATE</button>
     </form>
 </body>
-</html>`
-``
+</html>
+>
 
 The file should look like this when opened on a browser. It gives spaces to input the length and width of a rectangle and a ‘Calculate’ button
 Image description
